@@ -13,12 +13,14 @@ body {
 }
 
 #page-wraper {
-    background: url(../images/page-bg.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.787),rgba(0, 0, 0, 0.5)) ,url(../images/osu.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
+
+
 }
 
 
@@ -369,7 +371,12 @@ button:hover {
     border-top: 2px solid rgba(250, 250, 250, 0.1);
 }
 
-.left-image img,
+
+
+.left-image img{
+    margin-top: 78px;
+    border-radius: 10px;
+}
 .right-image img {
     border-radius: 5px;
 }
@@ -381,7 +388,7 @@ button:hover {
 
 .right-image-post p,
 .left-image-post p {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .right-image-post .white-button,
