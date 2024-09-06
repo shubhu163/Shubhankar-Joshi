@@ -116,10 +116,7 @@ https://templatemo.com/tm-531-reflux
                 <div class="left-text">
                   <h4>Extracurricular Activities</h4>
                   <p style="text-align: justify;">
-                    I worked as Club Head of the Aaroh Music club and managed a Team of 30 members.
-
-                    We organized online and offline music events for students of Vishwakarma Institute of Technology and ran social media campaigns on our official Instagram account.
-                    The events had open-mics, community sessions, and jamming sessions. All these events acted out as a platform for students to showcase their talent. With this opportunity I developed my leadership and teamwork skills.
+                    I worked as the Club Head of Aaroh Music Club, managing a team of 30 members. We organized various music events, both online and offline, including open-mics and jamming sessions. Through this, I developed leadership and teamwork skills. I am also a traine singer and share my singing covers on my Instagram account <a href="https://www.instagram.com/sing.shubhankar/?hl=en" target="_blank"> @sing.shubhankar</a>.
                   </p>
 
                 </div>
@@ -134,7 +131,116 @@ https://templatemo.com/tm-531-reflux
         </div>
       </section>
 
-      <section class="section my-services" data-section="section2">
+      <section class="section skills" data-section="section2">
+        <div class="container">
+            <div class="section-heading">
+                <h2>What I am good at ? </h2>
+
+            <div class="skills-container">
+              <div class="skill-row">
+                  <div class="skill">
+                      <h4>Python</h4>
+                      <div class="skill-bar">
+                          <div class="skill-level" style="width: 95%;" data-width="90%">90%</div>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <h4>Machine Learning</h4>
+                      <div class="skill-bar">
+                          <div class="skill-level" style="width: 90%;" data-width="85%">85%</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill-row">
+                  <div class="skill">
+                      <h4>Data Analysis</h4>
+                      <div class="skill-bar">
+                          <div class="skill-level" style="width: 90%;" data-width="80%">80%</div>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <h4>SQL</h4>
+                      <div class="skill-bar">
+                          <div class="skill-level" style="width: 95%;" data-width="85%">85%</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill-row">
+                  <div class="skill">
+                      <h4>Tableau</h4>
+                      <div class="skill-bar">
+                          <div class="skill-level" style="width: 85%;" data-width="80%">80%</div>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <h4>Power BI</h4>
+                      <div class="skill-bar">
+                          <div class="skill-level" style="width: 80%;" data-width="75%">75%</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill-row">
+                <div class="skill">
+                    <h4>PyTorch</h4>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;" data-width="85%">85%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4>TensorFlow</h4>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;" data-width="80%">80%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-row">
+                <div class="skill">
+                    <h4>NumPy / CuPy</h4>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;" data-width="85%">85%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4>Pandas / RAPIDS</h4>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;" data-width="85%">85%</div>
+                    </div>
+                </div>
+            </div>
+              <div class="skill-row">
+                  <div class="skill">
+                      <h4>HTML/CSS</h4>
+                      <div class="skill-bar">
+                          <div class="skill-level" style="width: 95%;" data-width="85%">85%</div>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <h4>JavaScript</h4>
+                      <div class="skill-bar">
+                          <div class="skill-level" style="width: 65%;" data-width="80%">80%</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill-row">
+                  <div class="skill">
+                      <h4>Git</h4>
+                      <div class="skill-bar">
+                          <div class="skill-level" style="width: 80%;" data-width="75%">75%</div>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <h4>Jira</h4>
+                      <div class="skill-bar">
+                          <div class="skill-level" style="width: 70%;" data-width="70%">70%</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+        </div>
+    </section>
+    
+      <!-- <section class="section my-services" data-section="section2">
         <div class="container">
           <div class="section-heading">
             <h2>What I’m good at?</h2>
@@ -201,7 +307,7 @@ https://templatemo.com/tm-531-reflux
           </div>
         </div>
       </section>
-      
+       -->
 
       <section class="section experience" data-section="section3">
         <div class="container">
@@ -551,6 +657,8 @@ https://templatemo.com/tm-531-reflux
       
 
 
+
+
       <section class="section publications" data-section="section6">
         <div class="container">
           <div class="section-heading">
@@ -644,6 +752,17 @@ https://templatemo.com/tm-531-reflux
     </div>
 
     <!-- Scripts -->
+    <script>
+      window.addEventListener('load', function () {
+          const skillLevels = document.querySelectorAll('.skill-level');
+          skillLevels.forEach(skill => {
+              const width = skill.getAttribute('data-width');
+              skill.style.width = width;
+          });
+      });
+  </script>
+  
+  
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

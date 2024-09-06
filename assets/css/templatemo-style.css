@@ -762,6 +762,9 @@ section.contact-me {
 }
 
 
+
+
+
 /* Bullet Points Styling */
 .experience-item ul.experience-list {
     list-style: none; /* Remove default bullets */
@@ -786,6 +789,75 @@ section.contact-me {
     font-size: 1.2em;
     line-height: 1.2;
     color: #000;         /* Black bullet point */
+}
+
+
+.skills-container {
+    margin-top: 60px;
+}
+
+.skill-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.skill {
+    width: 44%; /* Adjust the width so that two bars fit on a single line */
+}
+
+.skill h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.skill h4 i {
+    margin-right: 10px;
+    color: #a43f49; /* Keep color consistent with your site */
+    font-size: 20px;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 25px;
+    position: relative;
+}
+
+
+.skill-level {
+    background-color: #a43f49; /* Keep consistent color with your site */
+    height: 100%;
+    line-height: 25px;
+    border-radius: 5px;
+    transition: width 1.5s ease-in-out;
+    color: transparent; /* This will hide the text content */
+    text-align: right; /* In case there is any space reserved for text, this keeps alignment */
+    padding-right: 10px; /* Optional for padding adjustments */
+}
+
+/* Optional: If the percentage is inside a span or element inside the skill bar */
+.skill-level span {
+    display: none; /* Ensures any span with the percentage is hidden */
+}
+
+.skill-level::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.skill-bar:hover .skill-level::after {
+    opacity: 1;
 }
 
 
